@@ -1,11 +1,11 @@
-\input{/home/diego/Documents/Licenciatura/LatexBasic/Preamble_general}
+ \input{/home/diego/Documents/Licenciatura/LatexBasic/Preamble_general}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fancyhdr}%formato de pagina
 \pagestyle{fancy}%colocar la pagina con el formato deseado
 \fancyhead{}
-\fancyhead[L]{\footnotesize{Sistemas Dinámicos}}  
-\fancyhead[C]{Corto 1}
+%\fancyhead[L]{\footnotesize{Sistemas Dinámicos}}  
+%\fancyhead[C]{Corto 1}
 \fancyhead[R]{\footnotesize{\thepage}}
 %\fancyhead[LO,RE]{Cálculo 3}
 %\fancyhead[RO,LE]{\footnotesize{\thepage}}
@@ -30,23 +30,93 @@
 
 \begin{document}
 \begin{titlepage}
-\input{Header_original}
+%\input{Header_original}
+
+\textcolor{DS_Black}{
+\begin{minipage}{0.85\textwidth}
+    \begin{center}
+        \textbf{\Large Estudio Estadístco en Competiciones Deportivas}\\
+        \vspace{5pt}
+        Propuesta Proyecto de Prácticas \\
+        \vspace{20pt}
+        \textit{Diego Sarceño} \\
+        \vspace{5pt}
+        \footnotesize{\textit{201900109}} \\
+        \vspace{5pt}
+        \today
+    \end{center}
+\end{minipage}
+\vspace{10pt}
+\hrule
+}
 
 %\noindent \textbf{Instrucciones: } Resuelva cada uno de los siguientes problemas a \LaTeX  o a mano con letra clara y legible, dejando constancia de sus procedimientos. No es necesaria la carátula, únicamente su identificaciónn y las respuestas encerradas en un cuadro.
 
-\input{content.tex}
+%\input{content.tex}
+
+
+\section{Introducción}
+
+En el mundo del deporte, la emoción y la incertidumbre son dos elementos que constantemente desafían tanto a los seguidores apasionados como a los actores de la industria. Las competiciones deportivas oficiales, ya sean ligas de fútbol, torneos de tenis, carreras de automovilismo o eventos olímpicos, atraen a audiencias masivas y generan enormes cantidades de interés, inversión y apuestas. Sin embargo, la impredecibilidad inherente a los resultados deportivos ha mantenido a todos los involucrados en un estado constante de anticipación y expectación. \\
+
+En este contexto, la investigación estadística y la aplicación de simulaciones han emergido como herramientas cruciales que tienen el potencial de arrojar luz sobre el enigma de la predicción de resultados deportivos. Este protocolo de proyecto se establece con el propósito de abordar la emocionante intersección entre la investigación estadística y el mundo del deporte, centrándose en la predicción de resultados deportivos en competiciones oficiales y la utilización de simulaciones como una herramienta fundamental. \\
+
+
+La creación de modelos predictivos sólidos, basados en el análisis estadístico, permitirá a los interesados en el ámbito deportivo tomar decisiones informadas y estratégicas. Esto, a su vez, puede tener un impacto significativo en la toma de decisiones de los equipos, la planificación de estrategias, la gestión de riesgos y la experiencia global de los seguidores de los deportes.
 
 
 
 
+\section{Objetivos}
+\subsection{General}
+\begin{itemize}
+	\item Estudiar la estadística y los procesos detrás de los programas de predicción probabilística de resultados deportivos.
+\end{itemize}
 
-\begin{thebibliography}{00}
-\bibitem{b1} Falomir, H. (2015). \textit{Curso de métodos de la física matemática.} Series: Libros de Cátedra.
-\bibitem{b2} Saxe, K. (2002). \textit{Beginning functional analysis (p. 7)}. New York: Springer.
-\bibitem{b3} Reed, M. (2012). \textit{Methods of modern mathematical physics: Functional analysis.} Elsevier.
-\bibitem{b4} Axler, S. (2015). \textit{Linear algebra done right.} springer publication.
-\bibitem{b5} Bartle, R. G., \& Sherbert, D. R. (2000). \textit{Introduction to real analysis.} John Wiley \& Sons, Inc..
-\end{thebibliography}
+\subsection{Específicos}
+\begin{enumerate}
+	\item Recolectar artículos con la teoría relacionada.
+	\item Recolección de datos necesarios para simulación.
+	\item Realización de simulaciones con los datos obtenidos en base a la teoría revisada.
+\end{enumerate}
+
+
+\section{Justificación}
+
+Alineado con los objetivos de la Escuela de Ciencias Físicas y Matemáticas y las aplicaciones que tiene el área de estadística en una gran variedad de ámbitos abren la puerta al estudio de ciertas discilplinas, a priori, poco relacionadas con la Física o la Matemática. En este caso, como ya se mencionó, se realizará un estudio sobre las técnicas y teoría realizada en la predicción de resultados deportivos. Con esto no se busca fomentar las apuestas, solo mostrar aplicaciones interesantes de la estadística; además, los métodos utilizados podrían ser aplicados en otros ámbitos.
+
+%\section{Marco Teórico}
+
+
+
+\section{Metodología}
+
+Como se muestra en el cronograma, se realizará la busqueda de artículos y revisión de teoría relacionada con la estadística detrás de estos modelos. Por lo mismo, es necesaria la revisión de documentación del lenguaje a utilizar, esta elección depende de lo encontrado en la busqueda de artículos, dado que cada lenguaje tiene sus fortalezas y así aprovecharlas al máximo. \\
+
+
+Ya con la investigación y la revisión de documentación realizada, es momento de iniciar la escritura de código para realizar las diferentes simulaciones. Para tener una mejor idea de la eficacia de las probabilidades encontradas, se pueden realizar simulaciones sobre temporadas anteriores y compararlas con los resultados que se tuvieron. Ya con esto, se realizarán simulaciones sobre competiciones en curso, como la UEFA Champions League o la Copa CONMEBOL Libertadores. \\
+
+
+
+
+\section{Cronograma}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{./img/diagramaGantt.png}
+	\caption{Diagrama de Gantt del Proyecto}
+	\label{gantt}
+\end{figure}
+
+
+%\begin{thebibliography}{00}
+%\bibitem{b1} Falomir, H. (2015). \textit{Curso de métodos de la física matemática.} Series: Libros de Cátedra.
+%\bibitem{b2} Saxe, K. (2002). \textit{Beginning functional analysis (p. 7)}. New York: Springer.
+%\bibitem{b3} Reed, M. (2012). \textit{Methods of modern mathematical physics: Functional analysis.} Elsevier.
+%\bibitem{b4} Axler, S. (2015). \textit{Linear algebra done right.} springer publication.
+%\bibitem{b5} Bartle, R. G., \& Sherbert, D. R. (2000). \textit{Introduction to real analysis.} John Wiley \& Sons, Inc..
+%\end{thebibliography}
 
 
 
